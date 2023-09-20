@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containermain {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 75%;
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 18px 11px #dad8d8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.zarimg {
+  position: absolute;
+  top: 10%;
+}
+.zarimg img {
+  height: 8rem;
+}
+.activeplayer {
+  background-color: #b0a973 !important;
+}
+.activeplayer {
+  font-weight: 600;
+}
+.player {
+  width: 50%;
+  min-height: 500px;
+  max-height: 800px;
+  background-color: #f7bd9e;
+}
+.kraltac {
+  display: none;
+}
+.puanekle,
+.zaratbuton,
+.reset {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #9e6458;
+  padding: 1rem 3rem;
+  position: absolute;
+  transform: translate(-50%, -70%);
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 0 5px 0px #9e6458;
+}
+.reset {
+  top: 80%;
+  left: 50%;
+  display: none;
+}
+.zaratbuton {
+  top: 85%;
+  left: 50%;
+}
+.puanekle {
+  top: 70%;
+  left: 50%;
+}
+.zaratbuton:hover,
+.puanekle:hover,
+.reset:hover {
+  background-color: #5c5155;
+  color: #fff;
+  box-shadow: 0 0 5px 2px #5c5155;
+}
+
+.playername {
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.playername span {
+  font-size: 1.6rem;
+}
+.playercurrentscore {
+  text-align: center;
+  margin-top: 7rem;
+  font-size: 1.6rem;
+}
+.playertotalscore {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 10rem;
+}
